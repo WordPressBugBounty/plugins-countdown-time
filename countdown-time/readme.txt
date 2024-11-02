@@ -4,7 +4,7 @@ Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, countdown timer blocks, timer, count time, event date
 Requires at least: 6.2+
 Tested up to: 6.6.2
-Stable tag: 1.2.4
+Stable tag: 1.2.5
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -151,79 +151,9 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 == Changelog ==
 
-= 1.2.4 - 4 Feb 2024 =
-* Fix activation issue.
-
-= 1.2.3 - 20 Jan 2024 =
-* General improvements and optimizations.
-
-= 1.2.2 - 13 Jan 2024 =
-* Fix label change issue
-
-= 1.2.1 - 1 Jan 2024 =
-* Fix issue
-
-= 1.2.0 - 27 Dec 2023 =
-* Performance Improvement
-
-= 1.1.7 =
-* Fix the issue.
-
-= 1.1.6 =
-* Not load scripts if block is not used.
-
-= 1.1.5 =
-* Responsive enable/disable option.
-
-= 1.1.4 =
-* Fix free-pro activation conflict.
-
-= 1.1.3 =
-* Responsive Fix
-
-= 1.1.2 =
-* Add translate feature
-
-= 1.1.1 =
-* Fix HTML Render
-
-= 1.1.0 =
-* Reduce PHP Code
-* Performance Improvement
-
-= 1.0.9 =
-* Fix issue
-
-= 1.0.8 =
-* Reduce PHP Code
-
-= 1.0.7 =
-* Performance upgrade
-
-= 1.0.6 =
-* Performance upgrade
-
-= 1.0.5 =
-* Change default colors & performance upgrade
-
-= 1.0.4 =
-* Separator CSS fix
-
-= 1.0.3 =
-* Update labels in a modern way
-* Separator align fix
-
-= 1.0.2 =
-* Fix days count
-
-= 1.0.1 =
-* Layout fixing
-
-= 1.0.0 =
-* Initial Release
-
-
-== Upgrade Notice ==
+= 1.2.5 - 2 Nov 2024 =
+* Fix ShortCode Issue.
+* Update SDK
 
 = 1.2.4 - 4 Feb 2024 =
 * Fix activation issue.

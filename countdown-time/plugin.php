@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Countdown Time - Block
  * Description: Display your events date into a timer to your visitor with countdown time block
- * Version: 1.2.4
+ * Version: 1.2.5
  * Author: bPlugins
  * Author URI: https://bplugins.com
  * License: GPLv3
@@ -14,7 +14,6 @@
 if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
-
 if ( function_exists( 'ctb_fs' ) ) {
     register_activation_hook( __FILE__, function () {
         if ( is_plugin_active( 'countdown-time/plugin.php' ) ) {
@@ -25,21 +24,17 @@ if ( function_exists( 'ctb_fs' ) ) {
         }
     } );
 } else {
-    define( 'CTB_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.2.4' ) );
+    define( 'CTB_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.2.5' ) );
     define( 'CTB_DIR_URL', plugin_dir_url( __FILE__ ) );
     define( 'CTB_DIR_PATH', plugin_dir_path( __FILE__ ) );
     define( 'CTB_HAS_FREE', 'countdown-time/plugin.php' === plugin_basename( __FILE__ ) );
     define( 'CTB_HAS_PRO', 'countdown-time-pro/plugin.php' === plugin_basename( __FILE__ ) );
-    
     if ( !function_exists( 'ctb_fs' ) ) {
-        function ctb_fs()
-        {
-            global  $ctb_fs ;
-            
+        function ctb_fs() {
+            global $ctb_fs;
             if ( !isset( $ctb_fs ) ) {
                 $fsStartPath = dirname( __FILE__ ) . '/freemius/start.php';
                 $bSDKInitPath = dirname( __FILE__ ) . '/bplugins_sdk/init.php';
-                
                 if ( CTB_HAS_PRO && file_exists( $fsStartPath ) ) {
                     require_once $fsStartPath;
                 } else {
@@ -47,7 +42,6 @@ if ( function_exists( 'ctb_fs' ) ) {
                         require_once $bSDKInitPath;
                     }
                 }
-                
                 $ctbConfig = [
                     'id'                  => '14562',
                     'slug'                => 'countdown-time',
@@ -60,57 +54,48 @@ if ( function_exists( 'ctb_fs' ) ) {
                     'has_addons'          => false,
                     'has_paid_plans'      => true,
                     'trial'               => [
-                    'days'               => 7,
-                    'is_require_payment' => true,
-                ],
+                        'days'               => 7,
+                        'is_require_payment' => true,
+                    ],
                     'menu'                => [
-                    'slug'    => 'edit.php?post_type=ctb',
-                    'contact' => false,
-                    'support' => false,
-                ],
+                        'slug'    => 'edit.php?post_type=ctb',
+                        'contact' => false,
+                        'support' => false,
+                    ],
                 ];
                 $ctb_fs = ( CTB_HAS_PRO && file_exists( $fsStartPath ) ? fs_dynamic_init( $ctbConfig ) : fs_lite_dynamic_init( $ctbConfig ) );
             }
-            
             return $ctb_fs;
         }
-        
+
         ctb_fs();
         do_action( 'ctb_fs_loaded' );
     }
-    
-    if ( CTB_HAS_PRO ) {
-        if ( function_exists( 'ctb_fs' ) ) {
-            ctb_fs()->add_filter( 'freemius_pricing_js_path', function () {
-                return CTB_DIR_PATH . 'inc/freemius-pricing/freemius-pricing.js';
-            } );
-        }
-    }
-    function ctbIsPremium()
-    {
+    function ctbIsPremium() {
         return ( CTB_HAS_PRO ? ctb_fs()->can_use_premium_code() : false );
     }
-    
-    require_once CTB_DIR_PATH . '/inc/block.php';
-    require_once CTB_DIR_PATH . '/inc/pattern.php';
-    require_once CTB_DIR_PATH . '/inc/CustomPost.php';
-    require_once CTB_DIR_PATH . '/inc/HelpPage.php';
-    if ( CTB_HAS_FREE ) {
-        require_once CTB_DIR_PATH . '/inc/UpgradePage.php';
-    }
-    class CTBPlugin
-    {
-        function __construct()
-        {
-            add_action( 'wp_ajax_ctbPipeChecker', [ $this, 'ctbPipeChecker' ] );
-            add_action( 'wp_ajax_nopriv_ctbPipeChecker', [ $this, 'ctbPipeChecker' ] );
-            add_action( 'admin_init', [ $this, 'registerSettings' ] );
-            add_action( 'rest_api_init', [ $this, 'registerSettings' ] );
-            add_filter( 'block_categories_all', [ $this, 'blockCategories' ] );
+
+    require_once CTB_DIR_PATH . '/includes/pattern.php';
+    require_once CTB_DIR_PATH . '/includes/CustomPost.php';
+    require_once CTB_DIR_PATH . '/includes/HelpPage.php';
+    // if( CTB_HAS_FREE ){
+    // 	require_once CTB_DIR_PATH . '/includes/UpgradePage.php';
+    // }
+    class CTBPlugin {
+        function __construct() {
+            add_action( 'init', [$this, 'onInit'] );
+            add_action( 'wp_ajax_ctbPipeChecker', [$this, 'ctbPipeChecker'] );
+            add_action( 'wp_ajax_nopriv_ctbPipeChecker', [$this, 'ctbPipeChecker'] );
+            add_action( 'admin_init', [$this, 'registerSettings'] );
+            add_action( 'rest_api_init', [$this, 'registerSettings'] );
+            add_filter( 'block_categories_all', [$this, 'blockCategories'] );
         }
-        
-        function ctbPipeChecker()
-        {
+
+        function onInit() {
+            register_block_type( __DIR__ . '/build' );
+        }
+
+        function ctbPipeChecker() {
             $nonce = $_POST['_wpnonce'] ?? null;
             if ( !wp_verify_nonce( $nonce, 'wp_ajax' ) ) {
                 wp_send_json_error( 'Invalid Request' );
@@ -119,32 +104,31 @@ if ( function_exists( 'ctb_fs' ) ) {
                 'isPipe' => ctbIsPremium(),
             ] );
         }
-        
-        function registerSettings()
-        {
+
+        function registerSettings() {
             register_setting( 'ctbUtils', 'ctbUtils', [
                 'show_in_rest'      => [
-                'name'   => 'ctbUtils',
-                'schema' => [
-                'type' => 'string',
-            ],
-            ],
+                    'name'   => 'ctbUtils',
+                    'schema' => [
+                        'type' => 'string',
+                    ],
+                ],
                 'type'              => 'string',
                 'default'           => wp_json_encode( [
-                'nonce' => wp_create_nonce( 'wp_ajax' ),
-            ] ),
+                    'nonce' => wp_create_nonce( 'wp_ajax' ),
+                ] ),
                 'sanitize_callback' => 'sanitize_text_field',
             ] );
         }
-        
-        function blockCategories( $categories )
-        {
-            return array_merge( [ [
+
+        function blockCategories( $categories ) {
+            return array_merge( [[
                 'slug'  => 'CTBlock',
                 'title' => 'Countdown Time',
-            ] ], $categories );
+            ]], $categories );
         }
-    
+
     }
+
     new CTBPlugin();
 }
