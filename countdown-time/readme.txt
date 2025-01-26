@@ -3,7 +3,7 @@ Contributors: bplugins, abuhayat, charlescormier, freemius
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, countdown timer blocks, timer, count time, event date
 Requires at least: 6.2+
-Tested up to: 6.6.2
+Tested up to: 6.7.1
 Stable tag: 1.2.5
 Requires PHP: 7.1
 License: GPLv3 or later
@@ -224,4 +224,4 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 * Layout fixing
 
 = 1.0.0 =
-* Initial Release
+* Initial Release.
