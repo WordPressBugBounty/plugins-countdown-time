@@ -112,7 +112,7 @@ class CTBCustomPost{
 		}
 	}
 
-	function useBlockEditorForPost($use, $post){
+	function useBlockEditorForPost( $use, $post ){
 		if ( $this->post_type === $post->post_type ) {
 			return true;
 		}

@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Countdown Time - Block
  * Description: Display your events date into a timer to your visitor with countdown time block
- * Version: 1.2.5
+ * Version: 1.2.6
  * Author: bPlugins
  * Author URI: https://bplugins.com
  * License: GPLv3
@@ -24,7 +24,7 @@ if ( function_exists( 'ctb_fs' ) ) {
         }
     } );
 } else {
-    define( 'CTB_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.2.5' ) );
+    define( 'CTB_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.2.6' ) );
     define( 'CTB_DIR_URL', plugin_dir_url( __FILE__ ) );
     define( 'CTB_DIR_PATH', plugin_dir_path( __FILE__ ) );
     define( 'CTB_HAS_FREE', 'countdown-time/plugin.php' === plugin_basename( __FILE__ ) );
