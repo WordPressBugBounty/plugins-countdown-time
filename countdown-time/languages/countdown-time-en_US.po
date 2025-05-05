@@ -2,31 +2,35 @@
 # This file is distributed under the GPLv3.
 msgid ""
 msgstr ""
-"Project-Id-Version: Countdown Time - Block 1.2.7\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/countdown-time-pro\n"
+"Project-Id-Version: Countdown Timer - Block 1.2.8\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/countdown-time\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-02-17T10:16:31+00:00\n"
+"POT-Creation-Date: 2025-05-05T11:44:57+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.8.1\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: countdown-time\n"
 
 #. Plugin Name of the plugin
-msgid "Countdown Time - Block"
+#: plugin.php
+msgid "Countdown Timer - Block"
 msgstr ""
 
 #. Description of the plugin
+#: plugin.php
 msgid "Display your events date into a timer to your visitor with countdown time block"
 msgstr ""
 
 #. Author of the plugin
+#: plugin.php
 msgid "bPlugins"
 msgstr ""
 
 #. Author URI of the plugin
+#: plugin.php
 msgid "https://bplugins.com"
 msgstr ""
 

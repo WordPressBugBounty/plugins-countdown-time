@@ -1,7 +1,7 @@
 <?php
 class CTBPattern{
 	public function __construct(){
-		add_action('plugins_loaded', [$this, 'onPluginsLoaded']);
+		add_action('init', [$this, 'onPluginsLoaded']);
 	}
 
 	function onPluginsLoaded(){
