@@ -144,8 +144,8 @@
       "type": "object",
       "default": {
         "type": "gradient",
-        "color": "#4527a4",
-        "gradient": "linear-gradient(135deg, #4527a4, #8344c5)"
+        "color": "#146EF5",
+        "gradient": "linear-gradient(135deg, #0040E3, #18D4FD)"
       }
     },
     "boxWidth": {
@@ -174,9 +174,9 @@
       "type": "object",
       "default": {
         "fontSize": {
-          "desktop": 48,
-          "tablet": 40,
-          "mobile": 32
+          "desktop": "48px",
+          "tablet": "40px",
+          "mobile": "32px"
         }
       }
     },
@@ -188,9 +188,9 @@
       "type": "object",
       "default": {
         "fontSize": {
-          "desktop": 18,
-          "tablet": 17,
-          "mobile": 16
+          "desktop": "18px",
+          "tablet": "17px",
+          "mobile": "16px"
         }
       }
     },
@@ -206,8 +206,8 @@
       "type": "object",
       "default": {
         "type": "gradient",
-        "color": "#4527a4",
-        "gradient": "linear-gradient(135deg, #4527a4, #8344c5)"
+        "color": "#146EF5",
+        "gradient": "linear-gradient(135deg, #0040E3, #18D4FD)"
       }
     },
     "daysDigitColor": {
@@ -226,8 +226,8 @@
       "type": "object",
       "default": {
         "type": "gradient",
-        "color": "#4527a4",
-        "gradient": "linear-gradient(135deg, #4527a4, #8344c5)"
+        "color": "#146EF5",
+        "gradient": "linear-gradient(135deg, #0040E3, #18D4FD)"
       }
     },
     "hoursDigitColor": {
@@ -246,8 +246,8 @@
       "type": "object",
       "default": {
         "type": "gradient",
-        "color": "#4527a4",
-        "gradient": "linear-gradient(135deg, #4527a4, #8344c5)"
+        "color": "#146EF5",
+        "gradient": "linear-gradient(135deg, #0040E3, #18D4FD)"
       }
     },
     "minutesDigitColor": {
@@ -266,8 +266,8 @@
       "type": "object",
       "default": {
         "type": "gradient",
-        "color": "#4527a4",
-        "gradient": "linear-gradient(135deg, #4527a4, #8344c5)"
+        "color": "#146EF5",
+        "gradient": "linear-gradient(135deg, #0040E3, #18D4FD)"
       }
     },
     "secondsDigitColor": {
@@ -292,15 +292,13 @@
     },
     "sepColor": {
       "type": "string",
-      "default": "#4527a4"
+      "default": "#146EF5"
     },
     "prefixTextTypo": {
       "type": "object",
       "default": {
         "fontSize": {
-          "desktop": 15,
-          "tablet": 15,
-          "mobile": 15
+          "desktop": "15px"
         }
       }
     },
@@ -312,9 +310,7 @@
       "type": "object",
       "default": {
         "fontSize": {
-          "desktop": 16,
-          "tablet": 16,
-          "mobile": 16
+          "desktop": "16px"
         }
       }
     },

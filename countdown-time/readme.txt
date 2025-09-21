@@ -1,10 +1,10 @@
-=== Countdown Timer block - Display the event's date into a timer. ===
+=== Countdown Timer Block – Animated Countdown for Events or Launches ===
 Contributors: bplugins, abuhayat, charlescormier, freemius
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, countdown timer blocks, timer, count time, event date
 Requires at least: 6.5+
-Tested up to: 6.8.1
-Stable tag: 1.2.8
+Tested up to: 6.8
+Stable tag: 1.3.0
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -13,7 +13,7 @@ Display your event's date on a timer to your visitor with a countdown timer bloc
 
 == Description ==
 
-👉 [Plugin Demo](https://bplugins.com/products/countdown-time) | [Documentation](https://ctb.bplugins.com/docs/) | [Get Pro Version](https://bplugins.com/products/countdown-time/#pricing) 👈
+👉 [Plugin Demo](https://bplugins.com/products/countdown-time/) | [Documentation](https://ctb.bplugins.com/docs/) | [Get Pro Version](https://bplugins.com/products/countdown-time/pricing/) 👈
 
 Professionally showcase your countdown timer. This plugin adds a new block in the Block Editor by which you can create a professional-looking countdown timer block!
 
@@ -79,24 +79,24 @@ It is very effective in presenting your countdown timer nicely. There are many o
 - Did you like this plugin? Dislike it? Do you have a feature request? [Please share your feedback with us](mailto:support@bplugins.com 'Send feedback')
 
 
-### ⭐ Check out the Parent Plugin of this plugin-
+### Check out the Parent Plugin of this plugin-
 
-🔥 **[B Blocks](https://bblockswp.com)** – Best gutenberg blocks collections for WordPress.
+[**B Blocks**](https://bblockswp.com) – A blocks collection and page building tool for Gutenberg.
 
 
-### ⭐ Check out our other WordPress Plugins-
+### Check out our other WordPress Plugins-
 
-🔥 **[Html5 Audio Player](https://bplugins.com/products/html5-audio-player)** – Best audio player plugin for WordPress.
+[**Html5 Video Player**](https://bplugins.com/products/html5-video-player/) – Display videos as single and playlist in multiple skins.
 
-🔥 **[Html5 Video Player](https://bplugins.com/products/html5-video-player)** – Best video player plugin for WordPress.
+[**PDF Poster**](https://bplugins.com/products/pdf-poster/) – Display/Embed PDF files with different styles.
 
-🔥 **[PDF Poster](https://bplugins.com/products/pdf-poster)** – A fully-featured PDF Viewer Plugin for WordPress.
+[**Html5 Audio Player**](https://bplugins.com/products/html5-audio-player/) – Listen audios with awesome visuals.
 
-🔥 **[Document Embedder](https://bplugins.com/products/document-embedder)** – Best WordPress Document Embedder Plugin.
+[**StreamCast**](https://bplugins.com/products/streamcast-radio-player/) – Customizable radio player with different skins.
 
-🔥 **[3D Viewer](https://bplugins.com/products/3d-viewer)** – Display interactive 3D models on the webs.
+[**3D Viewer**](https://bplugins.com/products/3d-viewer/) – Embed 3D models and 3D products with interaction.
 
-🔥 **[Advanced Post Block](https://bplugins.com/products/advanced-post-block)** – Best Post Display Plugin for WordPress.
+[**Advanced Post Block**](https://bplugins.com/products/advanced-post-block/) – Show posts and custom posts in different layouts.
 
 
 == Installation ==
@@ -139,6 +139,10 @@ You can use unlimited times as you want.
 
 You can post your questions on the [support forum here](https://wordpress.org/support/plugin/countdown-time/)
 
+= Where do I report security bugs found in this plugin? =
+
+Please report security bugs found in the source code of the Countdown Timer plugin through the [Patchstack Vulnerability Disclosure Program](https://patchstack.com/database/vdp/9e5fc31f-1fa2-420c-bdc3-2629eaa79a31). The Patchstack team will assist you with verification, CVE assignment, and notify the developers of this plugin.
+
 
 == Screenshots ==
 
@@ -150,6 +154,11 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 
 == Changelog ==
+
+= 1.3.0 - 20 Sep 2025 =
+* Add Admin Dashboard
+* Update SDK
+* Reduce Code for Performance
 
 = 1.2.8 - 5 May 2025 =
 * Fix textdomain issue.

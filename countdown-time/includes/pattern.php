@@ -1,5 +1,9 @@
 <?php
-class CTBPattern{
+namespace CTB;
+
+if ( !defined( 'ABSPATH' ) ) { exit; }
+
+class Pattern{
 	public function __construct(){
 		add_action('init', [$this, 'onPluginsLoaded']);
 	}
@@ -33,4 +37,4 @@ class CTBPattern{
 		}
 	}
 }
-new CTBPattern();
+new Pattern();
