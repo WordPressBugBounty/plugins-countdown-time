@@ -15,19 +15,8 @@ class SubMenu {
 			__('Countdown Timer', 'countdown-time'),
 			'manage_options',
 			'countdown-time',
-			[$this, 'renderDashboardPage']
+			[ \CTBPlugin::class, 'renderDashboard' ]
 		);
 	}
-
-	function renderDashboardPage(){ ?>
-		<div
-			id='ctbDashboard'
-			data-info='<?php echo esc_attr( wp_json_encode( [
-				'version' => CTB_VERSION,
-				'isPremium' => ctbIsPremium(),
-				'hasPro' => CTB_HAS_PRO
-			] ) ); ?>'
-		></div>
-	<?php }
 }
 new SubMenu();
