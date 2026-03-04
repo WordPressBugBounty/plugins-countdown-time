@@ -4,7 +4,7 @@ Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, countdown timer blocks, timer, count time, event date
 Requires at least: 6.5+
 Tested up to: 6.9
-Stable tag: 1.3.1
+Stable tag: 1.3.2
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -155,8 +155,11 @@ Please report security bugs found in the source code of the Countdown Timer plug
 
 == Changelog ==
 
+= 1.3.2 - 04 Feb 2026 =
+* **Update:** Admin Dashboard - Improved UI with better navigation and clearer feature organization.
+
 = 1.3.1 - 29 Nov 2025 =
-* Performance Improvement
+* **Update:** Performance Improvement
 
 = 1.3.0 - 20 Sep 2025 =
 * Add Admin Dashboard
