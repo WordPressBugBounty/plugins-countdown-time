@@ -2,10 +2,10 @@
 Contributors: bplugins, abuhayat, charlescormier, freemius
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, countdown timer blocks, timer, count time, event date
-Requires at least: 6.5+
-Tested up to: 6.9
-Stable tag: 1.3.2
-Requires PHP: 7.1
+Requires at least: 6.5
+Tested up to: 7.0
+Stable tag: 1.3.3
+Requires PHP: 7.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -155,7 +155,11 @@ Please report security bugs found in the source code of the Countdown Timer plug
 
 == Changelog ==
 
-= 1.3.2 - 04 Feb 2026 =
+= 1.3.3 - 09 Jun 2026 =
+* **Update:** SDK
+* **Update:** Performance Improvement
+
+= 1.3.2 - 04 Mar 2026 =
 * **Update:** Admin Dashboard - Improved UI with better navigation and clearer feature organization.
 
 = 1.3.1 - 29 Nov 2025 =
@@ -242,10 +246,34 @@ Please report security bugs found in the source code of the Countdown Timer plug
 * Separator align fix
 
 = 1.0.2 =
-* Fix days count
+* Fix days count.
 
 = 1.0.1 =
 * Layout fixing.
 
 = 1.0.0 =
 * Initial Release.
+
+
+== Source Code ==
+
+You can find the source code, report bugs, and contribute to the development of this plugin on our GitHub repository:
+[**Countdown Timer on GitHub**](https://github.com/bPlugins/countdown-time-wp)
+
+
+== Third-Party Libraries ==
+
+This plugin bundles the following third-party JavaScript/PHP libraries.
+
+= Freemius Lite SDK =
+* **Source:** [https://bplugins.com/](https://bplugins.com/)
+* **GitHub:** [https://github.com/bPlugins/freemius-lite-sdk](https://github.com/bPlugins/freemius-lite-sdk)
+* **License:** GPL-2.0-or-later – [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html)
+* **Purpose:** Provides an opt-in consent form for usage tracking and analytics to help improve the plugin. No data is sent before explicit user consent.
+* **External Services:** Communicates with `api.bplugins.com` (activation events) and `wp.freemius.com` (opt-in processing) only after user opt-in. See [bPlugins Privacy Policy](https://bplugins.com/privacy-policy) and [Freemius Privacy Policy](https://freemius.com/privacy/).
+
+= bpl-tools =
+* Source / GitHub: https://github.com/bPlugins/bpl-tools
+* License: GPL-2.0-or-later – https://www.gnu.org/licenses/gpl-2.0.html
+* Purpose: Shared utility library providing admin dashboard components and common Gutenberg editor controls.
+* External Services: The library may connect to bPlugins, WordPress.org, and Freemius services for product data and checkout functionality. See full details: https://github.com/bPlugins/bpl-tools#external-requests--why-they-are-made

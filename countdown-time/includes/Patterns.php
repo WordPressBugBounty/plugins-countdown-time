@@ -3,16 +3,29 @@ namespace CTB;
 
 if ( !defined( 'ABSPATH' ) ) { exit; }
 
+/**
+ * Class Patterns
+ *
+ * Handles Gutenberg block patterns registration from pattern.json file.
+ *
+ * @package CTB
+ */
 class Patterns{
+	/**
+	 * Constructor. Sets up action hook for plugin init.
+	 */
 	public function __construct(){
 		add_action('init', [$this, 'onPluginsLoaded']);
 	}
 
+	/**
+	 * Decode pattern.json, filter Pro patterns if using the free version,
+	 * register block pattern category and individual block patterns.
+	 *
+	 * @return void
+	 */
 	function onPluginsLoaded(){
 		$patterns = wp_json_file_decode( __DIR__ . '/pattern.json', [ 'associative' => true ] );
-		$patterns = ctbIsPremium() ? $patterns : array_filter( $patterns, function( $item ) {
-			return !isset($item['pro']) || !$item['pro'];
-		} );
 
 		// Register Pattern Category
 		if ( function_exists( 'register_block_pattern_category' ) ) {

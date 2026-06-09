@@ -2,6 +2,14 @@
 if ( !defined( 'ABSPATH' ) ) { exit; }
 
 if ( ! function_exists( 'ctb_fs' ) ) {
+	/**
+	 * Freemius Lite SDK initialization and helper function.
+	 *
+	 * Checks if Freemius is set up, initializes it if necessary with the proper keys and plan configurations,
+	 * and returns the global Freemius instance.
+	 *
+	 * @return \Freemius The global Freemius instance.
+	 */
 	function ctb_fs() {
 		global $ctb_fs;
 
@@ -16,18 +24,12 @@ if ( ! function_exists( 'ctb_fs' ) ) {
 				'type'					=> 'plugin',
 				'public_key'			=> 'pk_7f62446a2a53154c56c36346db2fa',
 				'is_premium'			=> false,
-				'premium_suffix'		=> 'Pro',
-				'has_premium_version'	=> true,
-				'has_addons'			=> false,
-				'has_paid_plans'		=> true,
 				'menu'					=> [
 					'slug'			=> 'countdown-time',
 					'first-path'	=> 'tools.php?page=countdown-time',
 					'parent'		=> [
 						'slug'	=> 'tools.php'
-					],
-					'contact'		=> false,
-					'support'		=> false
+					]
 				]
 			] );
 		}
