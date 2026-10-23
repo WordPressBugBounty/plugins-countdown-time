@@ -1,88 +1,77 @@
-=== Countdown Timer Block – Animated Countdown for Events or Launches ===
+=== Countdown Timer Block – build urgency for events and launches ===
 Contributors: bplugins, abuhayat, charlescormier, freemius
-Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, countdown timer blocks, timer, count time, event date
-Requires at least: 6.5
-Tested up to: 7.0
+Tested up to: 7.1
 Stable tag: 1.3.3
 Requires PHP: 7.4
+Requires at least: 6.5
+Donate link: https://www.buymeacoffee.com/abuhayat
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Display your event's date on a timer to your visitor with a countdown timer block
+Countdown timer block for Gutenberg – count down to events, sales, and launches with customizable layouts, colors, separators, and patterns.
 
 == Description ==
 
-👉 [Plugin Demo](https://bplugins.com/products/countdown-time/) | [Documentation](https://ctb.bplugins.com/docs/) | [Get Pro Version](https://bplugins.com/products/countdown-time/pricing/) 👈
+**Show visitors exactly how long they have left – add a professional countdown timer to any post or page and turn deadlines into action.**
 
-Professionally showcase your countdown timer. This plugin adds a new block in the Block Editor by which you can create a professional-looking countdown timer block!
+[**Countdown Timer Block**](https://bplugins.com/products/countdown-time/) | [**Documentation**](https://ctb.bplugins.com/docs/) | [**Pricing**](https://bplugins.com/products/countdown-time/pricing/)
 
-It is very effective in presenting your countdown timer nicely. There are many options that you can use to decorate your countdown timer in any color you like.
+### Why Countdown Timer Block?
 
+Nothing motivates visitors like a ticking clock. **Countdown Timer Block** adds a dedicated block to the WordPress Block Editor so you can create a professional-looking countdown for your event, sale, or launch in minutes – no code required.
 
-= Features =
-- **Layout Options**: Choose from 4 distinct templates for different presentations.
+https://youtube.com/watch?v=DW02aMWHJbE
 
-- **Responsiveness**: Responsive for the mobile devices.
+Choose from four distinct layouts, toggle days, hours, minutes, and seconds on or off, and style every part of the timer – wrapper, boxes, digits, labels, and separators – to match your brand. Predefined patterns give you ready-made designs, and the timer stays fully responsive on mobile devices.
 
-- **Element Visibility**: Toggle the visibility of labels, days, hours, minutes, and seconds.
+### Free Features
 
-- **Wrapper Customization**: Configure width, background, padding, and shadow for the countdown wrapper.
+- **Layout Options:** Choose from 4 distinct templates for different presentations.
+- **Responsive:** Looks great on mobile devices out of the box.
+- **Element Visibility:** Toggle the visibility of labels, days, hours, minutes, and seconds.
+- **Wrapper Customization:** Configure width, background, padding, and shadow for the countdown wrapper.
+- **Boxes Customization:** Define background, width, height, border, and shadow settings for the countdown boxes.
+- **Content Appearance:** Adjust typography and color for the digit and label elements.
+- **Separator Customization:** Display separators and configure type, size, and color settings.
+- **Patterns:** Predefined designs for expanding the variety of styles.
 
-- **Boxes Customization**: Define background, width, height, border, and shadow settings for the countdown boxes.
+### Pro Version
 
-- **Content Appearance**: Adjust typography and color for the digit and label elements.
+Upgrade to [**Countdown Timer Pro**](https://bplugins.com/products/countdown-time/pricing/) for advanced behavior and styling controls:
 
-- **Separator Customization**: Display separators and configure type, size, and color settings.
-
-- **Patterns**: Predefined designs for expanding the variety of styles.
-
-
-= Pro Features =
-- **Expired Display:** Show content that has expired after the countdown timer has elapsed.
-
+- **Expired Display:** Show custom content after the countdown has elapsed.
 - **Hide at Zero:** Conceal the box when the countdown timer reaches 0.
+- **Mobile & Tablet Visibility:** Toggle the timer's visibility per device.
+- **Prefix Text & Style:** Display styled text before the countdown timer.
+- **Suffix Button & Style:** Show a button after the timer with typography, color, and padding controls.
+- **Prefix/Suffix Direction:** Control the layout flow of content before and after the timer.
+- **Single Style:** Style each box individually – background, digit color, and label color.
+- **Dismiss Button:** Let visitors hide the countdown manually.
+- **Extra Patterns:** Additional predefined countdown designs.
+- **Shortcode Integration:** Use the countdown anywhere via shortcode.
 
-- **Mobile Visibility:** Toggle visibility of the countdown timer on mobile devices.
+### How to Use – Quick Start
 
-- **Tablet Visibility:** Toggle visibility of the countdown timer on tablet devices.
+1. Install and activate the **Countdown Timer** plugin.
+2. Add the **Countdown Timer** block from the "Widgets" block category in the Gutenberg editor.
+3. Set your target date and adjust the design from the right-side settings sidebar.
+4. Publish – your countdown is live!
 
-- **Prefix Text:** Display text before the countdown timer.
+### Use Cases
 
-- **Prefix Style:** Implement typography settings and adjust the color for the prefix text.
+- **Sales & Promotions:** Count down to the end of a discount to create urgency.
+- **Product Launches:** Build anticipation before a new product or website goes live.
+- **Events & Webinars:** Show visitors exactly when your event starts.
+- **Limited-Time Offers:** Pair the timer with a call-to-action button (Pro suffix button).
 
-- **Suffix Button:** Show a button after the countdown timer.
+### Feedback
 
-- **Suffix Button Style:** Apply typography, colors(text and background) and padding for the suffix button.
-
-- **Prefix Suffix Direction:** Direction of the content displayed before and after the countdown timer.
-
-- **Single Style:** Apply different styles to each box, including variations in background, digit color, and label color.
-
-- **Dismiss Button:** Provide a button to dismiss/hide the countdown timer.
-
-- **Patterns**: Additional patterns for expanding the variety of countdown styles.
-
-- **Shortcode Integration:** Shortcode for flexible use across various locations.
-
-
-= How to use =
-- First, install the Countdown Timer plugin
-- Add the Countdown Timer block from the block category called "Widgets" in the Gutenberg editor.
-- You can change block settings from the right-side settings sidebar.
-- Enjoy!
-
-* For Installation help click on Installation Tab
-
-
-= Feedback =
-- Did you like this plugin? Dislike it? Do you have a feature request? [Please share your feedback with us](mailto:support@bplugins.com 'Send feedback')
-
+Did you like this plugin? Dislike it? Do you have a feature request? [Please share your feedback with us](mailto:support@bplugins.com 'Send feedback')
 
 ### Check out the Parent Plugin of this plugin-
 
 [**B Blocks**](https://bblockswp.com) – A blocks collection and page building tool for Gutenberg.
-
 
 ### Check out our other WordPress Plugins-
 
@@ -98,51 +87,59 @@ It is very effective in presenting your countdown timer nicely. There are many o
 
 [**Advanced Post Block**](https://bplugins.com/products/advanced-post-block/) – Show posts and custom posts in different layouts.
 
-
 == Installation ==
 
-= From Gutenberg Editor: =
-1. Go to the WordPress Block/Gutenberg Editor
-2. Search For **Countdown Timer**
-3. Click on the **Countdown Timer** block to add the block
+**From your WordPress dashboard (recommended):**
 
-= Download & Upload: =
-1. Download the **Countdown Timer** plugin (*.zip file*)
-2. In your admin area, go to the Plugins menu and click on **Add New**
-3. Click on **Upload Plugin** and choose the **`countdown-time.zip`** file and click on **Install Now**
-4. Activate the plugin and Enjoy!
+1. Go to **Plugins → Add New**.
+2. Search for **"Countdown Timer"**.
+3. Click **Install Now**, then **Activate**.
+4. Add the **Countdown Timer** block in the Gutenberg editor.
 
-= Manually: =
-1. Download and upload the **Countdown Timer** plugin to the **`/wp-content/plugins/`** directory
-2. Activate the plugin through the Plugins menu in WordPress
+**Manual installation:**
 
+1. Download the **Countdown Timer** plugin (*.zip file*).
+2. In your admin area, go to **Plugins → Add New** and click **Upload Plugin**.
+3. Choose the **`countdown-time.zip`** file, click **Install Now**, then **Activate**.
+4. Alternatively, upload the plugin folder to the **`/wp-content/plugins/`** directory and activate it from the **Plugins** menu.
 
 == Frequently Asked Questions ==
 
 = Is the Countdown Timer Block free? =
 
-Yes, Countdown Timer Block is a free Gutenberg block plugin.
+Yes, Countdown Timer Block is a free Gutenberg block plugin. A Pro version adds advanced behavior and styling options.
 
 = Does it work with any WordPress theme? =
 
-Yes, it will work with any standard WordPress theme.
+Yes, it works with any standard WordPress theme.
 
 = Can I change block settings? =
 
 Yes, you can change block settings from the Gutenberg block editor's right sidebar.
 
-= How many times can I reuse a block? =
+= Can I show a message after the countdown ends? =
 
-You can use unlimited times as you want.
+Yes. The Pro version's Expired Display feature shows custom content once the timer has elapsed, and Hide at Zero can hide the timer entirely when it reaches 0.
+
+= Can I use the countdown outside the block editor? =
+
+Yes. The Pro version includes shortcode integration, so you can place the countdown in various locations across your site.
+
+= Will the countdown timer slow down my website? =
+
+No. The plugin's scripts are only loaded on pages where the block is actually used.
+
+= How many times can I reuse the block? =
+
+There is no limit – add as many countdown timers as you want.
 
 = Where can I get support? =
 
-You can post your questions on the [support forum here](https://wordpress.org/support/plugin/countdown-time/)
+You can post your questions on the [support forum here](https://wordpress.org/support/plugin/countdown-time/).
 
 = Where do I report security bugs found in this plugin? =
 
 Please report security bugs found in the source code of the Countdown Timer plugin through the [Patchstack Vulnerability Disclosure Program](https://patchstack.com/database/vdp/9e5fc31f-1fa2-420c-bdc3-2629eaa79a31). The Patchstack team will assist you with verification, CVE assignment, and notify the developers of this plugin.
-
 
 == Screenshots ==
 
@@ -152,6 +149,27 @@ Please report security bugs found in the source code of the Countdown Timer plug
 4. Forth Layout
 5. Countdown Settings
 
+== Source Code ==
+
+You can find the source code, report bugs, and contribute to the development of this plugin on our GitHub repository:
+[**Countdown Timer on GitHub**](https://github.com/bPlugins/countdown-time-wp)
+
+== Third-Party Libraries ==
+
+This plugin bundles the following third-party JavaScript/PHP libraries.
+
+= Freemius Lite SDK =
+* **Source:** [https://bplugins.com/](https://bplugins.com/)
+* **GitHub:** [https://github.com/bPlugins/freemius-lite-sdk](https://github.com/bPlugins/freemius-lite-sdk)
+* **License:** GPL-2.0-or-later – [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html)
+* **Purpose:** Provides an opt-in consent form for usage tracking and analytics to help improve the plugin. No data is sent before explicit user consent.
+* **External Services:** Communicates with `api.bplugins.com` (activation events) and `wp.freemius.com` (opt-in processing) only after user opt-in. See [bPlugins Privacy Policy](https://bplugins.com/privacy-policy) and [Freemius Privacy Policy](https://freemius.com/privacy/).
+
+= bpl-tools =
+* Source / GitHub: https://github.com/bPlugins/bpl-tools
+* License: GPL-2.0-or-later – https://www.gnu.org/licenses/gpl-2.0.html
+* Purpose: Shared utility library providing admin dashboard components and common Gutenberg editor controls.
+* External Services: The library may connect to bPlugins, WordPress.org, and Freemius services for product data and checkout functionality. See full details: https://github.com/bPlugins/bpl-tools#external-requests--why-they-are-made
 
 == Changelog ==
 
@@ -253,27 +271,3 @@ Please report security bugs found in the source code of the Countdown Timer plug
 
 = 1.0.0 =
 * Initial Release.
-
-
-== Source Code ==
-
-You can find the source code, report bugs, and contribute to the development of this plugin on our GitHub repository:
-[**Countdown Timer on GitHub**](https://github.com/bPlugins/countdown-time-wp)
-
-
-== Third-Party Libraries ==
-
-This plugin bundles the following third-party JavaScript/PHP libraries.
-
-= Freemius Lite SDK =
-* **Source:** [https://bplugins.com/](https://bplugins.com/)
-* **GitHub:** [https://github.com/bPlugins/freemius-lite-sdk](https://github.com/bPlugins/freemius-lite-sdk)
-* **License:** GPL-2.0-or-later – [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html)
-* **Purpose:** Provides an opt-in consent form for usage tracking and analytics to help improve the plugin. No data is sent before explicit user consent.
-* **External Services:** Communicates with `api.bplugins.com` (activation events) and `wp.freemius.com` (opt-in processing) only after user opt-in. See [bPlugins Privacy Policy](https://bplugins.com/privacy-policy) and [Freemius Privacy Policy](https://freemius.com/privacy/).
-
-= bpl-tools =
-* Source / GitHub: https://github.com/bPlugins/bpl-tools
-* License: GPL-2.0-or-later – https://www.gnu.org/licenses/gpl-2.0.html
-* Purpose: Shared utility library providing admin dashboard components and common Gutenberg editor controls.
-* External Services: The library may connect to bPlugins, WordPress.org, and Freemius services for product data and checkout functionality. See full details: https://github.com/bPlugins/bpl-tools#external-requests--why-they-are-made
