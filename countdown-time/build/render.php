@@ -2,9 +2,9 @@
 /**
  * Block rendering template.
  *
- * @var array    $attributes Block attributes.
- * @var string   $content    Block inner content.
- * @var WP_Block $block      Block registration object.
+ * @var array		$attributes	Block attributes.
+ * @var string		$content	Block inner content.
+ * @var WP_Block	$block		Block registration object.
  *
  * @package CTB
  */

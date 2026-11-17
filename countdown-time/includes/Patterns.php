@@ -34,12 +34,16 @@ class Patterns{
 
 		// Register Pattern
 		if ( !empty( $patterns ) ) {
+			$labels = $this->getPatternLabels();
+
 			foreach ( $patterns as $pattern ) {
 				if ( function_exists( 'register_block_pattern' ) ) {
+					$label = $labels[ $pattern['name'] ] ?? [];
+
 					register_block_pattern( $pattern['name'], [
-						'title'			=> $pattern['title'],
+						'title'			=> $label['title'] ?? $pattern['title'],
 						'content'		=> $pattern['content'],
-						'description'	=> $pattern['description'],
+						'description'	=> $label['description'] ?? $pattern['description'],
 						'categories'	=> [ 'ctbPattern' ],
 						'keywords'		=> $pattern['keywords'],
 						'blockTypes'	=> $pattern['blockTypes'],
@@ -48,6 +52,32 @@ class Patterns{
 				}
 			}
 		}
+	}
+
+	/**
+	 * Translatable titles and descriptions for the patterns in pattern.json, keyed by pattern name.
+	 *
+	 * @return array
+	 */
+	private function getPatternLabels() {
+		return [
+			'ctb-patterns/countdown-2'	=> [
+				'title'			=> __( 'Countdown Time 2', 'countdown-time' ),
+				'description'	=> __( 'Countdown Time Design', 'countdown-time' )
+			],
+			'ctb-patterns/countdown-3'	=> [
+				'title'			=> __( 'Countdown Time 3', 'countdown-time' ),
+				'description'	=> __( 'Countdown Time Design', 'countdown-time' )
+			],
+			'ctb-patterns/countdown-4'	=> [
+				'title'			=> __( 'Countdown Time 4', 'countdown-time' ),
+				'description'	=> __( 'Countdown Time Design', 'countdown-time' )
+			],
+			'ctb-patterns/countdown-5'	=> [
+				'title'			=> __( 'Countdown Time 5', 'countdown-time' ),
+				'description'	=> __( 'Countdown Time Design', 'countdown-time' )
+			]
+		];
 	}
 }
 new Patterns();

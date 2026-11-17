@@ -1,6 +1,6 @@
 <?php
 /**
- * Freemius Lite — Admin logic + API client.
+ * Freemius Lite - Admin logic + API client.
  *
  * Single file containing all server-side SDK functionality.
  *
@@ -13,7 +13,7 @@ if (!defined('ABSPATH')) {
 }
 
 /* =========================================================================
-   Freemius_Lite  —  Minimal API client (multi-instance, scoped auth)
+   Freemius_Lite  -  Minimal API client (multi-instance, scoped auth)
    ========================================================================= */
 
 if (!class_exists('Freemius_Lite')) {
@@ -144,7 +144,7 @@ if (!class_exists('Freemius_Lite')) {
 }
 
 /* =========================================================================
-   FreemiusLiteAdmin  —  Flat admin class (replaces FS_Lite + FSActivate)
+   FreemiusLiteAdmin  -  Flat admin class (replaces FS_Lite + FSActivate)
    ========================================================================= */
 
 if (!class_exists('FreemiusLiteAdmin')) {
@@ -198,7 +198,7 @@ if (!class_exists('FreemiusLiteAdmin')) {
 			$this->status = (bool) get_option("{$this->prefix}-opt_in", false);
 			$this->marketing = (bool) get_option("{$this->prefix}-marketing-allowed", false);
 
-			// UI hooks — needed for the opt-in form itself (no remote calls).
+			// UI hooks - needed for the opt-in form itself (no remote calls).
 			add_filter("plugin_action_links_{$this->base_name}", [$this, 'opt_in_link']);
 			add_action('admin_init', [$this, 'maybe_redirect']);
 			add_action('admin_enqueue_scripts', [$this, 'enqueue']);
@@ -208,7 +208,7 @@ if (!class_exists('FreemiusLiteAdmin')) {
 
 			add_action('admin_menu', [$this, 'menu']);
 
-			// AJAX handlers — process opt-in form submissions (user-initiated only).
+			// AJAX handlers - process opt-in form submissions (user-initiated only).
 			add_action('wp_ajax_bsdk_fetch_info_' . $this->config->id, [$this, 'ajax_fetch_info']);
 			add_action('wp_ajax_fs_lite_init_' . $this->config->id, [$this, 'ajax_fs_init']);
 			add_action('wp_ajax_fs_notice_dismiss_' . $this->config->slug, [$this, 'ajax_dismiss']);
@@ -302,7 +302,7 @@ if (!class_exists('FreemiusLiteAdmin')) {
 					$this->config,
 					['permissions' => $this->post_field('permissions'), 'is_enabled' => $this->post_field('is_enabled') === 'true']
 				);
-				// Invalidate cache — permission_update writes to DB directly.
+				// Invalidate cache - permission_update writes to DB directly.
 				$this->cached_accounts = null;
 				if (is_array($result) && !$result['success']) {
 					wp_send_json_error(esc_html($result['message']));
@@ -408,7 +408,7 @@ if (!class_exists('FreemiusLiteAdmin')) {
 		{
 			$url = plugin_dir_url(__DIR__);
 
-			// Admin notice script — only loaded when there is an active notice.
+			// Admin notice script - only loaded when there is an active notice.
 			if ($this->has_pending_notice()) {
 				wp_enqueue_script('bsdk-admin-notice', $url . 'build/admin-notice.js', ['react', 'react-dom', 'wp-util'], $this->version, true);
 			}

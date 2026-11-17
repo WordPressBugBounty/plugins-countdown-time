@@ -1,6 +1,6 @@
 <?php
 /**
- * Freemius Lite SDK — Entry point.
+ * Freemius Lite SDK - Entry point.
  *
  * Consumer plugins call fs_lite_dynamic_init() to bootstrap.
  *
